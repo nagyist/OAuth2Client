@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28DE3BA39772465D997CEBD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDAA2B192E8464B871C4F73 /* libPods.a */; };
 		84C950DA18E9A40D00A35D4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C950D918E9A40D00A35D4C /* Foundation.framework */; };
 		84C950DC18E9A40D00A35D4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C950DB18E9A40D00A35D4C /* CoreGraphics.framework */; };
 		84C950DE18E9A40D00A35D4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C950DD18E9A40D00A35D4C /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 		84C950F518E9A40D00A35D4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C950DD18E9A40D00A35D4C /* UIKit.framework */; };
 		84C950FD18E9A40D00A35D4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C950FB18E9A40D00A35D4C /* InfoPlist.strings */; };
 		84C950FF18E9A40D00A35D4C /* OAuth2ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C950FE18E9A40D00A35D4C /* OAuth2ClientTests.m */; };
+		84C9511118E9B14800A35D4C /* OAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511018E9B14800A35D4C /* OAuthCredential.m */; };
+		84C9511418E9B17200A35D4C /* OAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511318E9B17200A35D4C /* OAuth2Client.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DDAA2B192E8464B871C4F73 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F09E32397ED480FABB4D19B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		84C950D618E9A40D00A35D4C /* OAuth2Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAuth2Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C950D918E9A40D00A35D4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84C950DB18E9A40D00A35D4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,11 @@
 		84C950FA18E9A40D00A35D4C /* OAuth2ClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OAuth2ClientTests-Info.plist"; sourceTree = "<group>"; };
 		84C950FC18E9A40D00A35D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C950FE18E9A40D00A35D4C /* OAuth2ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2ClientTests.m; sourceTree = "<group>"; };
+		84C9510F18E9B14800A35D4C /* OAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredential.h; sourceTree = "<group>"; };
+		84C9511018E9B14800A35D4C /* OAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCredential.m; sourceTree = "<group>"; };
+		84C9511218E9B17200A35D4C /* OAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client.h; sourceTree = "<group>"; };
+		84C9511318E9B17200A35D4C /* OAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2Client.m; sourceTree = "<group>"; };
+		84C9511518E9B6F700A35D4C /* OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 				84C950DC18E9A40D00A35D4C /* CoreGraphics.framework in Frameworks */,
 				84C950DE18E9A40D00A35D4C /* UIKit.framework in Frameworks */,
 				84C950DA18E9A40D00A35D4C /* Foundation.framework in Frameworks */,
+				28DE3BA39772465D997CEBD5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 				84C950F818E9A40D00A35D4C /* OAuth2ClientTests */,
 				84C950D818E9A40D00A35D4C /* Frameworks */,
 				84C950D718E9A40D00A35D4C /* Products */,
+				6F09E32397ED480FABB4D19B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,7 @@
 				84C950DB18E9A40D00A35D4C /* CoreGraphics.framework */,
 				84C950DD18E9A40D00A35D4C /* UIKit.framework */,
 				84C950F218E9A40D00A35D4C /* XCTest.framework */,
+				3DDAA2B192E8464B871C4F73 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +120,7 @@
 		84C950DF18E9A40D00A35D4C /* OAuth2Client */ = {
 			isa = PBXGroup;
 			children = (
+				84C9510818E9A52D00A35D4C /* Source */,
 				84C950E818E9A40D00A35D4C /* AppDelegate.h */,
 				84C950E918E9A40D00A35D4C /* AppDelegate.m */,
 				84C950EB18E9A40D00A35D4C /* Images.xcassets */,
@@ -144,6 +158,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84C9510818E9A52D00A35D4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84C9511518E9B6F700A35D4C /* OAuth2.h */,
+				84C9511218E9B17200A35D4C /* OAuth2Client.h */,
+				84C9511318E9B17200A35D4C /* OAuth2Client.m */,
+				84C9510F18E9B14800A35D4C /* OAuthCredential.h */,
+				84C9511018E9B14800A35D4C /* OAuthCredential.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C9510218E9A40D00A35D4C /* Build configuration list for PBXNativeTarget "OAuth2Client" */;
 			buildPhases = (
+				DE8FFD81FC0643759FE00757 /* Check Pods Manifest.lock */,
 				84C950D218E9A40D00A35D4C /* Sources */,
 				84C950D318E9A40D00A35D4C /* Frameworks */,
 				84C950D418E9A40D00A35D4C /* Resources */,
+				CEFF82C9B9FE420392335FC6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,11 +262,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEFF82C9B9FE420392335FC6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8FFD81FC0643759FE00757 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84C950D218E9A40D00A35D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C9511118E9B14800A35D4C /* OAuthCredential.m in Sources */,
+				84C9511418E9B17200A35D4C /* OAuth2Client.m in Sources */,
 				84C950EA18E9A40D00A35D4C /* AppDelegate.m in Sources */,
 				84C950E618E9A40D00A35D4C /* main.m in Sources */,
 			);
@@ -354,6 +417,7 @@
 		};
 		84C9510318E9A40D00A35D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F09E32397ED480FABB4D19B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +432,7 @@
 		};
 		84C9510418E9A40D00A35D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F09E32397ED480FABB4D19B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -439,6 +504,7 @@
 				84C9510418E9A40D00A35D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84C9510518E9A40D00A35D4C /* Build configuration list for PBXNativeTarget "OAuth2ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +513,7 @@
 				84C9510718E9A40D00A35D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
