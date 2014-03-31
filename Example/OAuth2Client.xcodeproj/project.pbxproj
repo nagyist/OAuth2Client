@@ -20,8 +20,8 @@
 		84C950F518E9A40D00A35D4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C950DD18E9A40D00A35D4C /* UIKit.framework */; };
 		84C950FD18E9A40D00A35D4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C950FB18E9A40D00A35D4C /* InfoPlist.strings */; };
 		84C950FF18E9A40D00A35D4C /* OAuth2ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C950FE18E9A40D00A35D4C /* OAuth2ClientTests.m */; };
-		84C9511118E9B14800A35D4C /* OAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511018E9B14800A35D4C /* OAuthCredential.m */; };
-		84C9511418E9B17200A35D4C /* OAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511318E9B17200A35D4C /* OAuth2Client.m */; };
+		84C9511E18E9BA2C00A35D4C /* OAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */; };
+		84C9511F18E9BA2C00A35D4C /* OAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,11 @@
 		84C950FA18E9A40D00A35D4C /* OAuth2ClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OAuth2ClientTests-Info.plist"; sourceTree = "<group>"; };
 		84C950FC18E9A40D00A35D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C950FE18E9A40D00A35D4C /* OAuth2ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2ClientTests.m; sourceTree = "<group>"; };
-		84C9510F18E9B14800A35D4C /* OAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredential.h; sourceTree = "<group>"; };
-		84C9511018E9B14800A35D4C /* OAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCredential.m; sourceTree = "<group>"; };
-		84C9511218E9B17200A35D4C /* OAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client.h; sourceTree = "<group>"; };
-		84C9511318E9B17200A35D4C /* OAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2Client.m; sourceTree = "<group>"; };
-		84C9511518E9B6F700A35D4C /* OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2.h; sourceTree = "<group>"; };
+		84C9511918E9BA2C00A35D4C /* OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2.h; sourceTree = "<group>"; };
+		84C9511A18E9BA2C00A35D4C /* OAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client.h; sourceTree = "<group>"; };
+		84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2Client.m; sourceTree = "<group>"; };
+		84C9511C18E9BA2C00A35D4C /* OAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredential.h; sourceTree = "<group>"; };
+		84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCredential.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 		84C950DF18E9A40D00A35D4C /* OAuth2Client */ = {
 			isa = PBXGroup;
 			children = (
-				84C9510818E9A52D00A35D4C /* Source */,
+				84C9511818E9BA2C00A35D4C /* Source */,
 				84C950E818E9A40D00A35D4C /* AppDelegate.h */,
 				84C950E918E9A40D00A35D4C /* AppDelegate.m */,
 				84C950EB18E9A40D00A35D4C /* Images.xcassets */,
@@ -158,16 +158,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		84C9510818E9A52D00A35D4C /* Source */ = {
+		84C9511818E9BA2C00A35D4C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				84C9511518E9B6F700A35D4C /* OAuth2.h */,
-				84C9511218E9B17200A35D4C /* OAuth2Client.h */,
-				84C9511318E9B17200A35D4C /* OAuth2Client.m */,
-				84C9510F18E9B14800A35D4C /* OAuthCredential.h */,
-				84C9511018E9B14800A35D4C /* OAuthCredential.m */,
+				84C9511918E9BA2C00A35D4C /* OAuth2.h */,
+				84C9511A18E9BA2C00A35D4C /* OAuth2Client.h */,
+				84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */,
+				84C9511C18E9BA2C00A35D4C /* OAuthCredential.h */,
+				84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */,
 			);
-			path = Source;
+			name = Source;
+			path = ../../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C9511118E9B14800A35D4C /* OAuthCredential.m in Sources */,
-				84C9511418E9B17200A35D4C /* OAuth2Client.m in Sources */,
+				84C9511F18E9BA2C00A35D4C /* OAuthCredential.m in Sources */,
+				84C9511E18E9BA2C00A35D4C /* OAuth2Client.m in Sources */,
 				84C950EA18E9A40D00A35D4C /* AppDelegate.m in Sources */,
 				84C950E618E9A40D00A35D4C /* main.m in Sources */,
 			);
