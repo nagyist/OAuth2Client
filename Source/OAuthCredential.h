@@ -13,13 +13,13 @@
 + (instancetype)createWithAccessToken:(NSString *)accessToken
                                ofType:(NSString *)tokenType;
 
-@property (nonatomic, strong) NSString *accessToken;
-@property (nonatomic, strong) NSString *refreshToken;
-@property (nonatomic, strong) NSString *tokenType;
-@property (nonatomic, strong) NSDate *expiryDate;
-
-@property (nonatomic, assign, getter = isExpired) BOOL expired;
+@property (nonatomic, copy) NSString *accessToken;
+@property (nonatomic, copy) NSString *refreshToken;
+@property (nonatomic, copy) NSString *tokenType;
+@property (nonatomic, copy) NSDate *expiryDate;
 
 - (id)initWithAccessToken:(NSString *)accessToken ofType:(NSString *)tokenType;
+
+- (BOOL)isExpired;
 
 @end

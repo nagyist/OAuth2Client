@@ -23,4 +23,9 @@
     return self;
 }
 
+- (BOOL)isExpired {
+    if (!self.expiryDate) return NO;
+    else return ([self.expiryDate compare:[NSDate date]] == NSOrderedAscending);
+}
+
 @end
