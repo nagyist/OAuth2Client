@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SalesForce.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, strong) SalesForce *force;
 
 @end

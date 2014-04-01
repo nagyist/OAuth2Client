@@ -36,13 +36,14 @@ NSString * const kOAuthRedirectURI = @"redirect_uri";
         
         _clientID = clientID;
         _clientSecret = clientSecret;
-        
-        [self setRequestSerializer:[AFJSONRequestSerializer serializer]];
-        [self setResponseSerializer:[AFJSONResponseSerializer serializer]];
     }
     
     return self;
 }
+
+//- (NSDictionary *)authoriazationHeader {
+//    return @{@"Authorization": [NSString stringWithFormat:@"Bearer %@", @"XX"]};
+//}
 
 - (void)authenticateWithUsername:(NSString *)username
                         password:(NSString *)password
@@ -51,31 +52,30 @@ NSString * const kOAuthRedirectURI = @"redirect_uri";
 
     id path = (self.path) ? self.path : @"";
 
-    id params = [NSMutableDictionary dictionary];
+    id params = [self parameters];
     [params setObject:@"password" forKey:@"grant_type"];
     [params setObject:username forKey:@"username"];
     [params setObject:password forKey:@"password"];
     
-    [self POST:path parameters:params constructingBodyWithBlock:nil
+    [self POST:path parameters:params
        success:^(NSURLSessionDataTask *task, id responseObject) {
-           
+           NSLog(@"Success");
        }
        failure:^(NSURLSessionDataTask *task, NSError *error) {
-           
+           NSLog(@"Failed");
        }];
     
     [self POST:path parameters:params constructingBodyWithBlock:nil success:nil failure:nil];
 }
 
-//- (NSMutableDictionary *)paramters {
-//    id params = [NSMutableDictionary dictionary];
-//    [params setObject:kAFOAuthPasswordCredentialsGrantType forKey:@"grant_type"];
-//    [params setValue: forKey:@"username"];
-//    [params setValue:password forKey:@"password"];
-//    return params;
-//}
-
-
-
+- (NSMutableDictionary *)parameters {
+    id params = [NSMutableDictionary dictionary];
+    [params setObject:self.clientID forKey:@"client_id"];
+    [params setObject:self.clientSecret forKey:@"client_secret"];
+    return params;
+}
 
 @end
+
+
+

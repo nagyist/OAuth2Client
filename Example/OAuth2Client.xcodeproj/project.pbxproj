@@ -22,6 +22,7 @@
 		84C950FF18E9A40D00A35D4C /* OAuth2ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C950FE18E9A40D00A35D4C /* OAuth2ClientTests.m */; };
 		84C9511E18E9BA2C00A35D4C /* OAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */; };
 		84C9511F18E9BA2C00A35D4C /* OAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */; };
+		84C9512518EAFDE500A35D4C /* SalesForce.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9512418EAFDE500A35D4C /* SalesForce.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2Client.m; sourceTree = "<group>"; };
 		84C9511C18E9BA2C00A35D4C /* OAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCredential.h; sourceTree = "<group>"; };
 		84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCredential.m; sourceTree = "<group>"; };
+		84C9512318EAFDE500A35D4C /* SalesForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesForce.h; sourceTree = "<group>"; };
+		84C9512418EAFDE500A35D4C /* SalesForce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesForce.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				84C9511B18E9BA2C00A35D4C /* OAuth2Client.m */,
 				84C9511C18E9BA2C00A35D4C /* OAuthCredential.h */,
 				84C9511D18E9BA2C00A35D4C /* OAuthCredential.m */,
+				84C9512318EAFDE500A35D4C /* SalesForce.h */,
+				84C9512418EAFDE500A35D4C /* SalesForce.m */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -305,6 +310,7 @@
 				84C9511E18E9BA2C00A35D4C /* OAuth2Client.m in Sources */,
 				84C950EA18E9A40D00A35D4C /* AppDelegate.m in Sources */,
 				84C950E618E9A40D00A35D4C /* main.m in Sources */,
+				84C9512518EAFDE500A35D4C /* SalesForce.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
